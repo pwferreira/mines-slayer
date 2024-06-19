@@ -1,15 +1,20 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 
 export default props => {
+
+    const logo = require('../../assets/daki.png');
+
     return (
         <View style={styles.container}>
-            <View style={styles.coreMine}>
+            {/* <View style={styles.coreMine}>
                 <View style={styles.line}></View>
                 <View style={[styles.line,{ transform: [{rotate: '45deg' }]}]}></View>
                 <View style={[styles.line,{ transform: [{rotate: '90deg' }]}]}></View>
                 <View style={[styles.line,{ transform: [{rotate: '135deg' }]}]}></View>
-            </View>
+            </View> */}
+            <Image source={logo} style={{width: 25, height: 25}} />
+           
         </View>
     )
 }
